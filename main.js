@@ -55,22 +55,22 @@ document.getElementById("result_name2").innerHTML=results[1].label;
 prediction1=results[0].label;
 prediction2=results[1].label;
 speak();
-if(prediction1=="happy"){
+if(results[0].label=="happy"){
 document.getElementById("update_emoji").innerHTML="&#128522;";
 }
-if(prediction1=="sad"){
+if(results[0].label=="sad"){
     document.getElementById("update_emoji").innerHTML="&#128532;";
     }
-    if(prediction1=="angry"){
+    if(results[0].label=="angry"){
         document.getElementById("update_emoji").innerHTML="&#128548;";
         }
-        if(prediction2=="happy"){
+        if(results[1].label=="happy"){
             document.getElementById("update_emoji").innerHTML="&#128522;";
             }
-            if(prediction2=="sad"){
+            if(results[1].label=="sad"){
                 document.getElementById("update_emoji").innerHTML="&#128532;";
                 }
-                if(prediction2=="angry"){
+                if(results[1].label=="angry"){
                     document.getElementById("update_emoji").innerHTML="&#128548;";
                     }
 }
